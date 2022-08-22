@@ -1,0 +1,18 @@
+﻿@using WebApplication1.Models
+@{
+    ViewBag.Title = "Students";
+}
+
+<h2>Students</h2>
+
+  </ol>
+@{List<StudentEntity> studlist = this.ViewBag.Students;
+    <ol>
+        @{ foreach (StudentEntity s in studlist)
+            {
+                <li>@s.Name  <a href="~/Admin/Insert">Submit The Feedback</a></li>
+            }
+        }
+    </ol>
+}
+

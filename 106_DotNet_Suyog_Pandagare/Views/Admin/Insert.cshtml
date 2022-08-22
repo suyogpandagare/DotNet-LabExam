@@ -1,0 +1,44 @@
+﻿
+@{
+    ViewBag.Title = "Insert";
+}
+
+<h2>Insert Feedback Details</h2>
+
+
+<form method="post" action="/admin/insert">
+
+
+    <table>
+        
+        <tr>
+            <td>Name:</td>
+            <td><input type="text" name="name" /></td>
+        </tr>
+        <tr>
+            <td>Date:</td>
+            <td><input type="date" name="date" /></td>
+        </tr>
+        <tr>
+            <td>Module:</td>
+            <td><input type="text" name="module" /></td>
+        </tr>
+        <tr>
+            <td>Faculty:</td>
+            <td><input type="text" name="faculty" /></td>
+        </tr>
+        <tr>
+            <td>Problem Solving Skills:</td>
+            <td><input type="number" name="pbskills" /></td>
+        </tr>
+        <tr>
+            <td>Presentation Skills:</td>
+            <td><input type="number" name="prskills" /></td>
+        </tr>
+
+        <tr>
+            <td></td>
+            <td><input type="submit" />Enter The FeedBack</td>
+        </tr>
+    </table>
+</form>
